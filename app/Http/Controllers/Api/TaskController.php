@@ -18,7 +18,7 @@ class TaskController extends Controller
 
         $data = [
             'tasks' => $tasks,
-            'status' => 200
+            'status' => "success"
         ];
 
         return response()->json($data,200);
@@ -39,7 +39,7 @@ class TaskController extends Controller
             $data = [
                 'message' => 'Error en la validacion',
                 'errors' => $validator->errors(),
-                'status' => 400
+                'status' => "failed"
             ];
             return response()->json($data, 400);
         }
@@ -53,14 +53,14 @@ class TaskController extends Controller
         if (!$task) {
             $data = [
                 'message' => 'Error al crear la tarea',
-                'status' => 500
+                'status' => "error"
             ];
             return response()->json($data, 500);
         }
 
         $data = [
             'task' => $task,
-            'status' => 201
+            'status' => "success"
         ];
 
         return response()->json($data, 201);
@@ -76,14 +76,14 @@ class TaskController extends Controller
         if (!$task) {
             $data = [
                 'message' => 'Estudiante no encontrado',
-                'status' => 404
+                'status' => "not-found"
             ];
             return response()->json($data, 404);
         }
 
         $data = [
             'task' => $task,
-            'status' => 200
+            'status' => "success"
         ];
 
         return response()->json($data, 200);
@@ -99,7 +99,7 @@ class TaskController extends Controller
         if (!$task) {
             $data = [
                 'message' => 'Tarea no encontrado',
-                'status' => 404
+                'status' => "not-found"
             ];
             return response()->json($data, 404);
         }
@@ -114,7 +114,7 @@ class TaskController extends Controller
             $data = [
                 'message' => 'Error en la validación',
                 'errors' => $validator->errors(),
-                'status' => 400
+                'status' => "failed"
             ];
             return response()->json($data, 400);
         }
@@ -128,7 +128,7 @@ class TaskController extends Controller
         $data = [
             'message' => 'Tarea actualizada',
             'task' => $task,
-            'status' => 200
+            'status' => "success"
         ];
 
         return response()->json($data, 200);
@@ -144,7 +144,7 @@ class TaskController extends Controller
         if (!$task) {
             $data = [
                 'message' => 'Tarea no encontrado',
-                'status' => 404
+                'status' => "not-found"
             ];
             return response()->json($data, 404);
         }
@@ -153,7 +153,7 @@ class TaskController extends Controller
 
         $data = [
             'message' => 'Tarea eliminada',
-            'status' => 200
+            'status' => "success"
         ];
 
         return response()->json($data, 200);
