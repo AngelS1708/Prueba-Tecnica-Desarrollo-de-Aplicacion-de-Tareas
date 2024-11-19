@@ -1,4 +1,67 @@
-<<<<<<< HEAD
+# Prueba Tecnica de Gestión de Tareas
+
+Este es un proyecto de gestión de tareas desarrollado con Laravel, Bootstrap y JavaScript. La aplicación permite a los usuarios crear, ver, editar y eliminar tareas mediante una API REST.
+
+## Tecnologías utilizadas
+
+- Laravel (Backend y API).
+- Bootstrap (Estilos y diseño de interfaz).
+- JavaScript (Interactividad y lógica de frontend).
+
+### Instalacion
+
+Sigue los siguientes pasos para instalar y configurar el proyecto en tu entorno local.
+
+1. Clona el repositorio:
+
+   ```bash
+   git clone https://github.com/tu_usuario/tu_repositorio.git
+
+2. Navega al directorio del proyecto:
+
+    ```bash
+    cd tu_repositorio
+
+3. Instala las dependencias de Laravel:
+
+    ```bash
+    composer install
+
+4. Configura la conexión a la base de datos en el archivo .env.
+
+5. Ejecuta las migraciones y seeders para crear las tablas:
+
+    ```bash
+    php artisan migrate --seeders
+
+6. Inicia el servidor de Laravel:
+
+    ```bash
+    php artisan serve
+    npm run dev
+
+7. Abre el navegador y visita http://localhost:8000 para ver el sistema.
+
+## Endpoints de la API
+
+- GET /api/tasks: Obtiene todas las tareas.
+- GET /api/tasks/{id}: Obtiene una tarea específica.
+- POST /api/tasks: Crea una nueva tarea.
+- PUT /api/tasks/{id}: Actualiza una tarea existente.
+- DELETE /api/tasks/{id}: Elimina una tarea.
+
+## Funcionalidad de la aplicación
+
+- Al cargar la página, la tabla muestra todas las tareas disponibles.
+- Para agregar una nueva tarea, haz clic en el botón "Agregar Tarea", completa los datos y guarda.
+- Para editar una tarea, haz clic en el botón de editar junto a la tarea, realiza los cambios y guarda.
+- Para eliminar una tarea, haz clic en el botón de eliminar y confirma la acción.
+- Para ver los detalles de una tarea, haz clic en el botón de detalles junto a la tarea.
+
+
+
+# Laravel
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
@@ -65,6 +128,3 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-=======
-# Prueba-Tecnica-Desarrollo-de-Aplicacion-de-Tareas
->>>>>>> 3f3b7e41fb136423145b60050fe58bded7b465db
