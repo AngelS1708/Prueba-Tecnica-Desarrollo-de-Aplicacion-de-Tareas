@@ -22,9 +22,9 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 // Route::apiResource('tasks', TaskController::class);
 
-Route::get('/tasks', [TaskController::class, 'index']);         // Lista todas las tareas
-Route::get('/tasks/{id}', [TaskController::class, 'show']);     // Muestra una tarea específica
-Route::post('/tasks', [TaskController::class, 'store']);        // Crea una nueva tarea
-Route::put('/tasks/{id}', [TaskController::class, 'update']);   // Actualiza una tarea existente
-Route::delete('/tasks/{id}', [TaskController::class, 'destroy']); // Elimina una tarea
+Route::get('/tasks', [TaskController::class, 'index']);
+Route::get('/tasks/{id}', [TaskController::class, 'show']);
+Route::post('/tasks', [TaskController::class, 'store']);
+Route::put('/tasks/{id}', [TaskController::class, 'update']);
+Route::delete('/tasks/{id}', [TaskController::class, 'destroy']);
 
