@@ -29,8 +29,6 @@
             </thead>
 
             <tbody id="taskTableBody">
-
-            
             </tbody>
         </table>
     </div>
@@ -116,7 +114,6 @@
     </div>
 
     <!-- Modal Edit Task -->
-
     <div class="modal fade" id="modalEdit" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
